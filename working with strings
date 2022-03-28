@@ -1,0 +1,59 @@
+#2
+def k():
+    s1=str(input("Введите строку  "))
+    n=0 #счетчик цифр
+    m=0 #счетчик букв
+    for i in s1:
+        if i.isdigit():
+            n=n+1
+    for i in s1:
+        if i.isalpha():
+            m=m+1
+    print("Цифр: ", n, "Букв: ",m)
+k()
+while True:
+    f=input("Продолжить [y/n]? ")
+    if f=="y":
+        k()
+    else:
+        break
+#3
+def k():
+    s1=str(input("Введите строку  "))
+    simvol=str(input("Какой символ ищем? "))
+    print(s1.count(simvol))
+k()
+while True:
+    f=input("Продолжить [y/n]? ")
+    if f=="y":
+        k()
+    else:
+        break
+
+#4
+def k():
+    s1=str(input("Введите строку  "))
+    simvol=str(input("Какое слово ищем? "))
+    print(s1.count(simvol))
+k()
+while True:
+    f=input("Продолжить [y/n]? ")
+    if f=="y":
+        k()
+    else:
+        break
+
+#5
+def k():
+    s1=str(input("Введите строку  "))
+    simvol=str(input("Какое слово ищем? "))
+    zamena=str(input("на что меняем? "))
+    print(s1.replace(simvol,zamena))
+  
+k()
+while True:
+    f=input("Продолжить [y/n]? ")
+    if f=="y":
+        k()
+    else:
+        break
